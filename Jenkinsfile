@@ -3,8 +3,7 @@ node ('docker') {
   checkout scm
   
   stage "Build Images"
-  sh "ls -l"
   dir ('example-voting-app') {
-    sh "ls -l"
+    sh "docker-compose -f docker-compose.yml build"
   }
 }
