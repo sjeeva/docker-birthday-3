@@ -1,5 +1,5 @@
 node ('docker') {
-  stage "Checkout App Code"
+  stage "Checkout App"
   checkout scm
   
   dir ('example-voting-app') {
