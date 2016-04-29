@@ -4,5 +4,7 @@ node ('docker') {
   
   stage "Build Images"
   sh "ls -l"
-  dir "docker-birthday-3/example-voting-app"
+  dir ('docker-birthday-3/example-voting-app') {
+    sh "ls -l"
+  }
 }
