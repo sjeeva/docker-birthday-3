@@ -3,6 +3,6 @@ node ('docker') {
   checkout scm
   
   stage "Build Images"
-  dir example-voting-app
-  sh ls -l
+  sh "ls -l"
+  dir "example-voting-app"
 }
