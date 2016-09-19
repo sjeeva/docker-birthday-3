@@ -3,14 +3,14 @@ version: "2"
 services:
   voting-app:
     build: ./voting-app/.
-    image: voting-app
+    image: jcdemo/voting-app
     networks:
       - front-tier
       - back-tier
 
   result-app:
     build: ./result-app/.
-    image: result-app
+    image: jcdemo/result-app
     networks:
       - front-tier
       - back-tier
